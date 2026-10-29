@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFRAMEDIC | Foro y Opiniones</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="INFRAMEDIC" class="brand-logo">
+            <span class="brand-name">INFRAMEDIC</span>
+        </a>
+
+        <button id="menuToggle" class="menu-toggle" aria-label="Abrir Menú">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="beneficios.html">Beneficios</a></li>
+                <li><a href="demostracion.html">Demostración</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="foro.html" class="active">Opiniones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-cta-wrapper">
+            <a href="descargas.html" class="btn-cta-nav">
+                <i class="fas fa-download"></i> Obtener App
+            </a>
+        </div>
+    </div>
+</header>
+
+    <div class="page-header">
+        <h1>Foro y Comentarios de Usuarios</h1>
+        <p>Comparte tus experiencias, dudas o sugerencias sobre el sistema INFRAMEDIC.</p>
+    </div>
+
+    <main class="container">
+        <div class="grid-2">
+            <div class="card" data-aos="fade-right">
+                <h3 style="margin-bottom: 1rem;"><i class="fa-solid fa-pen-to-square" style="color: var(--verde-acento);"></i> Deja tu Comentario</h3>
+                <form id="forumForm">
+                    <div class="form-group">
+                        <label for="userName">Nombre Completo:</label>
+                        <input type="text" id="userName" class="form-control" required placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="userRole">Institución o Colegio:</label>
+                        <input type="text" id="userRole" class="form-control" placeholder="Ej. Instituto Nacional">
+                    </div>
+                    <div class="form-group">
+                        <label for="userComment">Mensaje o Sugerencia:</label>
+                        <textarea id="userComment" class="form-control" rows="4" required placeholder="Escribe aquí tu experiencia con la aplicación..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="border: none; cursor: pointer; width: 100%; justify-content: center;">
+                        <i class="fa-solid fa-paper-plane"></i> Publicar Opinión
+                    </button>
+                </form>
+            </div>
+
+            <div id="forumPostsContainer" style="display: flex; flex-direction: column; gap: 1.5rem;" data-aos="fade-left">
+                <div class="card">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                        <h4 style="color: var(--azul-principal);">Dra. María Fernández</h4>
+                        <small style="color: var(--texto-muted);">Hace 2 días</small>
+                    </div>
+                    <p style="font-size: 0.95rem; color: var(--texto-muted);">
+                        "Ha facilitado muchísimo la gestión de fichas médicas en nuestro complejo educativo. La generación automática de PDF nos ahorra valioso tiempo."
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                        <h4 style="color: var(--azul-principal);">Lic. Roberto Gómez</h4>
+                        <small style="color: var(--texto-muted);">Hace 5 días</small>
+                    </div>
+                    <p style="font-size: 0.95rem; color: var(--texto-muted);">
+                        "Excelente herramienta para llevar el control estricto de medicamentos en inventario. Muy recomendada para colegios."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<footer>
+    <div class="footer-container">
+        <div>
+            <div style="display: flex; align-items: center; gap: 12px;">
+                <div class="footer-logo-circle">
+                    <img src="logo.png" alt="INFRAMEDIC Logo" class="footer-logo-img">
+                </div>
+                <span style="font-size: 1.35rem; font-weight: 800; color: white;">INFRAMEDIC</span>
+            </div>
+            <p class="footer-desc">El estándar moderno en gestión de salud escolar.</p>
+        </div>
+        <div>
+            <h4 style="color: white; margin-bottom: 0.8rem;">Navegación</h4>
+            <ul class="footer-links">
+                <li><a href="beneficios.html">Beneficios</a></li>
+                <li><a href="catalogo.html">Catálogo Médico</a></li>
+                <li><a href="descargas.html">Descargas</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 style="color: white; margin-bottom: 0.8rem;">Soporte</h4>
+            <ul class="footer-links">
+                <li><a href="foro.html">Foro de Opiniones</a></li>
+                <li><a href="contacto.html">Contacto Directo</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 INFRAMEDIC. Todos los derechos reservados.</div>
+</footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

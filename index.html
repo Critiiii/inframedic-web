@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFRAMEDIC | Inicio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="INFRAMEDIC" class="brand-logo">
+            <span class="brand-name">INFRAMEDIC</span>
+        </a>
+
+        <button id="menuToggle" class="menu-toggle" aria-label="Abrir Menú">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="beneficios.html">Beneficios</a></li>
+                <li><a href="demostracion.html">Demostración</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="foro.html">Opiniones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-cta-wrapper">
+            <a href="descargas.html" class="btn-cta-nav">
+                <i class="fas fa-download"></i> Obtener App
+            </a>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-container">
+                <div data-aos="fade-right" data-aos-duration="900">
+                    <div class="hero-badge">
+                        <i class="fa-solid fa-shield-halved"></i> Software Médico Escolar Gratuito y de Código Abierto
+                    </div>
+                    <h1 class="hero-title">Digitaliza la Clínica de tu Colegio con <span>Precisión y Rapidez</span></h1>
+                    <p class="hero-subtitle">Optimiza la atención estudiantil, lleva historiales clínicos seguros al instante y genera expedientes PDF oficiales en segundos. Sin costos de suscripción.</p>
+                    <div class="hero-btns">
+                        <a href="descargas.html" class="btn-primary"><i class="fa-solid fa-download"></i> Descargar INFRAMEDIC</a>
+                        <a href="demostracion.html" class="btn-secondary"><i class="fa-solid fa-circle-play"></i> Ver Demostración</a>
+                    </div>
+                </div>
+
+                <div class="preview-control-panel" data-aos="fade-left" data-aos-duration="900">
+                    <div class="preview-top-bar">
+                        <span class="dot-btn red"></span>
+                        <span class="dot-btn yellow"></span>
+                        <span class="dot-btn green"></span>
+                        <span class="preview-bar-title">Inframedic v2.4 - Panel de Control</span>
+                    </div>
+                    <div class="preview-content-box">
+                        <div class="student-card-info">
+                            <div>
+                                <strong style="display: block; font-size: 1.05rem; color: #0F172A;">Rodrigo José Martínez</strong>
+                                <small style="color: #64748B; font-size: 0.88rem;">NIE: 1234519 · 3° Año Desarrollo de Software</small>
+                            </div>
+                            <span class="status-tag">Atendido</span>
+                        </div>
+
+                        <div class="recipe-info-tag">
+                            <i class="fa-solid fa-pills"></i> <strong>Medicamento recetado:</strong> Acetaminofén (1 Tab) + Suero Oral
+                        </div>
+
+                        <div class="footer-meta-info">
+                            <span><i class="fa-regular fa-clock"></i> Hace 5 minutos</span>
+                            <span style="color: #0F4C81; font-weight: 700;"><i class="fa-solid fa-file-pdf"></i> Expediente PDF Generado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div style="text-align: center; margin-bottom: 3rem;" data-aos="fade-up">
+                <h2 style="font-size: 2rem; font-weight: 800;">¿Por qué implementar INFRAMEDIC en tu Institución?</h2>
+                <p style="color: var(--texto-muted);">Potencia la atención médica de tus estudiantes de forma segura y moderna.</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h3>Atención Eficiente</h3>
+                    <p>Reduce tiempos de espera buscando rápidamente las alergias y ficha del estudiante mediante su NIE.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+                    <h3>Cero Desabastecimiento</h3>
+                    <p>Mantén un control actualizado en tiempo real de todos los insumos y medicamentos del botiquín.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon"><i class="fa-solid fa-shield-cat"></i></div>
+                    <h3>100% Gratuito y Privado</h3>
+                    <p>Solución desarrollada para apoyar a complejos educativos e instituciones públicas y privadas.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <div class="footer-logo-circle">
+                        <img src="logo.png" alt="INFRAMEDIC Logo" class="footer-logo-img">
+                    </div>
+                    <span style="font-size: 1.35rem; font-weight: 800; color: white;">INFRAMEDIC</span>
+                </div>
+                <p class="footer-desc">El estándar moderno en gestión de salud escolar.</p>
+            </div>
+            <div>
+                <h4 style="color: white; margin-bottom: 0.8rem;">Navegación</h4>
+                <ul class="footer-links">
+                    <li><a href="beneficios.html">Beneficios</a></li>
+                    <li><a href="catalogo.html">Catálogo Médico</a></li>
+                    <li><a href="descargas.html">Descargas</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="color: white; margin-bottom: 0.8rem;">Soporte</h4>
+                <ul class="footer-links">
+                    <li><a href="foro.html">Foro de Opiniones</a></li>
+                    <li><a href="contacto.html">Contacto Directo</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; 2026 INFRAMEDIC. Todos los derechos reservados.</div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

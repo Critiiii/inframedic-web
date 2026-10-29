@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFRAMEDIC | Demostración</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="INFRAMEDIC" class="brand-logo">
+            <span class="brand-name">INFRAMEDIC</span>
+        </a>
+
+        <button id="menuToggle" class="menu-toggle" aria-label="Abrir Menú">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="beneficios.html">Beneficios</a></li>
+                <li><a href="demostracion.html" class="active">Demostración</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="foro.html">Opiniones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-cta-wrapper">
+            <a href="descargas.html" class="btn-cta-nav">
+                <i class="fas fa-download"></i> Obtener App
+            </a>
+        </div>
+    </div>
+</header>
+
+    <div class="page-header">
+        <h1>Demostración del Sistema Python</h1>
+        <p>Aprende a utilizar el software de gestión clínica médica escolar paso a paso con este video explicativo.</p>
+    </div>
+
+    <main class="container">
+        <div class="card" style="max-width: 900px; margin: 0 auto; text-align: center; padding: 1.5rem;">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; background: #000;">
+                <iframe 
+                    style="position: absolute; top:0; left: 0; width: 100%; height: 100%; border: 0;" 
+                    src="InframedicAccion.mp4" 
+                    title="Demostración INFRAMEDIC" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            
+            <div style="margin-top: 2rem; text-align: left;">
+                <h3>¿Qué aprenderás en este tutorial?</h3>
+                <br>
+                <ul style="list-style-type: none; display: grid; gap: 0.8rem;">
+                    <li><i class="fa-solid fa-check" style="color: var(--verde-acento); margin-right: 8px;"></i> Cómo registrar un expediente médico escolar buscando por NIE.</li>
+                    <li><i class="fa-solid fa-check" style="color: var(--verde-acento); margin-right: 8px;"></i> Descuento automático de fármacos en inventario.</li>
+                    <li><i class="fa-solid fa-check" style="color: var(--verde-acento); margin-right: 8px;"></i> Exportación de comprobantes clínicos en formato PDF oficial.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+ <footer>
+    <div class="footer-container">
+        <div>
+            <div style="display: flex; align-items: center; gap: 12px;">
+                <div class="footer-logo-circle">
+                    <img src="logo.png" alt="INFRAMEDIC Logo" class="footer-logo-img">
+                </div>
+                <span style="font-size: 1.35rem; font-weight: 800; color: white;">INFRAMEDIC</span>
+            </div>
+            <p class="footer-desc">El estándar moderno en gestión de salud escolar.</p>
+        </div>
+        <div>
+            <h4 style="color: white; margin-bottom: 0.8rem;">Navegación</h4>
+            <ul class="footer-links">
+                <li><a href="beneficios.html">Beneficios</a></li>
+                <li><a href="catalogo.html">Catálogo Médico</a></li>
+                <li><a href="descargas.html">Descargas</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 style="color: white; margin-bottom: 0.8rem;">Soporte</h4>
+            <ul class="footer-links">
+                <li><a href="foro.html">Foro de Opiniones</a></li>
+                <li><a href="contacto.html">Contacto Directo</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 INFRAMEDIC. Todos los derechos reservados.</div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

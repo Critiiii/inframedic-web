@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFRAMEDIC | Catálogo Médico</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="INFRAMEDIC" class="brand-logo">
+            <span class="brand-name">INFRAMEDIC</span>
+        </a>
+
+        <button id="menuToggle" class="menu-toggle" aria-label="Abrir Menú">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="beneficios.html">Beneficios</a></li>
+                <li><a href="demostracion.html">Demostración</a></li>
+                <li><a href="catalogo.html" class="active">Catálogo</a></li>
+                <li><a href="foro.html">Opiniones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-cta-wrapper">
+            <a href="descargas.html" class="btn-cta-nav">
+                <i class="fas fa-download"></i> Obtener App
+            </a>
+        </div>
+    </div>
+</header>
+
+    <div class="page-header">
+        <h1>Catálogo de Medicamentos e Insumos</h1>
+        <p>Listado de medicamentos e insumos básicos soportados en el inventario escolar.</p>
+    </div>
+
+    <main class="container">
+        <div class="grid-3">
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-pills"></i></div>
+                <h3>Analgésicos y Antipiréticos</h3>
+                <p>Paracetamol, Ibuprofeno y Acetaminofén para control de fiebre y dolores leves en estudiantes.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-band-aid"></i></div>
+                <h3>Material de Cuelga y Curación</h3>
+                <p>Gasas estériles, vendas, curitas, alcohol antiséptico, agua oxigenada y cinta quirúrgica.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-hand-holding-medical"></i></div>
+                <h3>Antihistamínicos</h3>
+                <p>Medicamentos de primera respuesta ante reacciones alérgicas leves (Loratadina, Cetirizina).</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-kit-medical"></i></div>
+                <h3>Botiquín de Emergencia</h3>
+                <p>Termómetros digitales, tensiómetros, oxímetros de pulso y férulas de inmovilización rápida.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-bottle-droplet"></i></div>
+                <h3>Soluciones Antisépticas</h3>
+                <p>Yodopovidona, solución salina fisiológica y geles antibacterianos para limpieza de heridas.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-notes-medical"></i></div>
+                <h3>Insumos de Protección</h3>
+                <p>Guantes desechables de nitrilo/látex, mascarillas quirúrgicas y botes de desecho biológico.</p>
+            </div>
+        </div>
+    </main>
+
+ <footer>
+    <div class="footer-container">
+        <div>
+            <div style="display: flex; align-items: center; gap: 12px;">
+                <div class="footer-logo-circle">
+                    <img src="logo.png" alt="INFRAMEDIC Logo" class="footer-logo-img">
+                </div>
+                <span style="font-size: 1.35rem; font-weight: 800; color: white;">INFRAMEDIC</span>
+            </div>
+            <p class="footer-desc">El estándar moderno en gestión de salud escolar.</p>
+        </div>
+        <div>
+            <h4 style="color: white; margin-bottom: 0.8rem;">Navegación</h4>
+            <ul class="footer-links">
+                <li><a href="beneficios.html">Beneficios</a></li>
+                <li><a href="catalogo.html">Catálogo Médico</a></li>
+                <li><a href="descargas.html">Descargas</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 style="color: white; margin-bottom: 0.8rem;">Soporte</h4>
+            <ul class="footer-links">
+                <li><a href="foro.html">Foro de Opiniones</a></li>
+                <li><a href="contacto.html">Contacto Directo</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 INFRAMEDIC. Todos los derechos reservados.</div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
