@@ -1,0 +1,55 @@
+:root { --azul: #0C2950; --turquesa: #008BAA; --blanco: #FFFFFF; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, Helvetica, sans-serif; color: var(--azul); background: var(--blanco); line-height: 1.6; }
+a { color: inherit; text-decoration: none; }
+
+header { position: sticky; top: 0; z-index: 10; background: var(--blanco); border-bottom: 3px solid var(--turquesa); display: flex; align-items: center; justify-content: space-between; padding: 10px 40px; flex-wrap: wrap; gap: 10px; }
+.logo { display: flex; align-items: center; gap: 10px; font-weight: bold; font-size: 20px; }
+.logo img { height: 46px; }
+nav a { margin: 0 14px; font-size: 15px; padding-bottom: 4px; }
+nav a:hover, nav a.activo { border-bottom: 3px solid var(--turquesa); }
+.btn { display: inline-block; background: var(--azul); color: var(--blanco); padding: 11px 22px; border-radius: 6px; font-weight: bold; border: 2px solid var(--azul); }
+.btn:hover { background: var(--turquesa); border-color: var(--turquesa); }
+.btn.claro { background: var(--blanco); color: var(--azul); }
+.btn.claro:hover { background: var(--azul); color: var(--blanco); border-color: var(--azul); }
+
+.principal { display: flex; align-items: center; gap: 40px; padding: 70px 40px; max-width: 1150px; margin: 0 auto; flex-wrap: wrap; }
+.principal .texto { flex: 1.2; min-width: 300px; }
+.etiqueta { display: inline-block; border: 2px solid var(--turquesa); color: var(--turquesa); border-radius: 20px; padding: 3px 14px; font-size: 13px; font-weight: bold; margin-bottom: 16px; }
+.principal h1 { font-size: 40px; line-height: 1.2; margin-bottom: 16px; }
+.principal p { margin-bottom: 26px; }
+.botones .btn { margin-right: 10px; margin-bottom: 8px; }
+
+.panel { flex: 1; min-width: 280px; border: 2px solid var(--azul); border-radius: 12px; padding: 20px; box-shadow: 8px 8px 0 var(--turquesa); }
+.panel .titulo { font-weight: bold; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid var(--turquesa); }
+.panel .fila { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.panel .estado { background: var(--turquesa); color: var(--blanco); border-radius: 12px; padding: 2px 12px; font-size: 13px; font-weight: bold; }
+.panel .receta { border: 1px solid var(--turquesa); border-radius: 6px; padding: 10px; font-size: 14px; margin-bottom: 12px; }
+.panel .pie { font-size: 13px; display: flex; justify-content: space-between; color: var(--turquesa); font-weight: bold; }
+
+.seccion { padding: 60px 40px; text-align: center; border-top: 2px solid var(--turquesa); }
+.seccion h2 { font-size: 30px; margin-bottom: 8px; }
+.seccion .sub { margin-bottom: 34px; }
+.tarjetas { display: flex; gap: 24px; max-width: 1100px; margin: 0 auto; flex-wrap: wrap; }
+.tarjeta { flex: 1 1 280px; border: 2px solid var(--turquesa); border-radius: 10px; padding: 24px 20px; text-align: left; transition: transform .2s; }
+.tarjeta:hover { transform: translateY(-5px); box-shadow: 6px 6px 0 var(--azul); }
+.tarjeta h3 { color: var(--turquesa); margin-bottom: 8px; }
+
+.encabezado { background: var(--azul); color: var(--blanco); text-align: center; padding: 50px 40px; }
+.encabezado h1 { font-size: 34px; margin-bottom: 8px; }
+
+.contacto { display: flex; gap: 40px; max-width: 1000px; margin: 0 auto; padding: 50px 40px; flex-wrap: wrap; }
+.contacto > div { flex: 1; min-width: 280px; }
+.contacto h2 { margin-bottom: 16px; }
+.contacto p { margin-bottom: 12px; }
+form label { display: block; font-weight: bold; margin: 12px 0 4px; font-size: 14px; }
+form input, form textarea { width: 100%; padding: 10px; border: 2px solid var(--turquesa); border-radius: 6px; font-family: inherit; font-size: 15px; }
+form button { margin-top: 16px; cursor: pointer; font-size: 15px; }
+
+footer { background: var(--azul); color: var(--blanco); padding: 36px 40px 18px; }
+.pie-cols { display: flex; gap: 40px; max-width: 1100px; margin: 0 auto 20px; flex-wrap: wrap; }
+.pie-cols > div { flex: 1; min-width: 200px; }
+footer h4 { margin-bottom: 8px; color: var(--blanco); border-bottom: 2px solid var(--turquesa); display: inline-block; }
+footer a { display: block; font-size: 14px; margin-bottom: 4px; }
+footer a:hover { color: #9ADCEB; }
+.copy { text-align: center; font-size: 13px; border-top: 1px solid var(--turquesa); padding-top: 14px; }
